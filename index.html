@@ -1,159 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
     crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
     crossorigin="anonymous"></script>
-
-</head>
-
-<style>
-  .card {
-    border-radius: 0!important;
-  }
-
-  .card:hover {
-    box-shadow: 20px 20px 80px -44px #000;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-  }
-
-  .card-img-top {
-    border-radius: 0!important;
-    height: 250px;
-  }
-
-  .btn-success {
-    border-radius: 0!important;
-  }
-
-  .price {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding: 15px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-  }
-</style>
-
-
-
-<body>
-
-  <div class="">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">E-Commerce</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-1g-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Products</a>
-            </li>
-
-            <li class="nav-item">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
-                <button class="btn btn-outline-sucess" type="submit">Search</button>
-              </form>
-            </li>
-
-            <li class="nav-item dropdown" hidden>
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Settings
-              </a>
-
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Account Settings</a></li>
-                <li><a class="dropdown-item" href="#">Privacy Settings</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a hidden class="nav-link-disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-
-          <form class="d-flex" role="search">
-            <button type="button" class="btn btn-primary position-relative">
-              Cart
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                4
-                <span class="visually-hidden">Item count</span>
-              </span> 
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <div class="container mt-3">
-    <h3 class="text-center">Perfume</h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-5">
-      <div class="col">
-        <div class="card">
-          <img src="perfume2.jpg" class="card-img-top" alt="...">
-          <div class="price">
-            <h6>$150</h6>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Coach Fragrance Eau de Toilette</h5>
-            <p class="card-text">Energetic, sensual fragrance.</p>
-            <button class="btn btn-success ms-auto">Add to Cart</button>
-            
-          </div>
-        </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img src="perfume1.jpg" class="card-img-top" alt="...">
-            <div class="price">
-              <h6>$230</h6>
+  </head>
+  <body>
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: palevioletred;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">E-Commerce</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </li>
+                  <li class="nav-item dropdown" hidden>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Settings
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Account Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy Settings</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+<!--Add Items-->
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Add Product
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="floatingInput" placeholder="Product Name">
+                              <label for="floatingInput">Product Name</label>
+                            </div>
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1">Description</span>
+                              <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                              <span class="input-group-text">$</span>
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text">.00</span>
+                            </div>
+                            <label for="basic-url" class="form-label">Product Image</label>
+                            <div class="input-group mb-3">
+                              <button class="btn btn-outline-secondary" type="button" id="button-addon1">Choose File</button>
+                              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Add Product</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <button type="button" class="btn btn-primary position-relative">
+                    Cart
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                      <span class="visually-hidden">Item count</span>
+                    </span>
+                  </button>
+                </form>
+              </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Agent Provocateur Fatale Perfume</h5>
-              <p class="card-text">irresistible, yet mouth-watering aroma.</p>
-              <button class="btn btn-success ms-auto">Add to Cart</button>
-              
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="perfume3.jpg" class="card-img-top" alt="...">
-          <div class="price">
-            <h6>$300</h6>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Ralph Lauren Perfume</h5>
-            <p class="card-text">Essence of modern femininity, Woman</p>
-            <button class="btn btn-success ms-auto">Add to Cart</button>
-            
-        </div>
-        
-      </div>
+          </nav>
     </div>
 
-
+    <!--Items-->>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://i5.walmartimages.com/asr/b8871c44-c2b1-4233-9aac-fb18edeae6ff_1.50bdf6da582d4f150df873580bd57625.jpeg" alt="" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">Ralph Lauren Perfume</h5>
+          <p class="card-text">Essence of modern femininity, Woman</p>    
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <p>Price:
+            <button type="button" class="btn btn-dark">₱6,999</button>
+            <div>
+              <button type="button" class="btn btn-outline-success">Add to cart</button>
+              <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#005eff}</style><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg></button>
+            </p>
+            </div>
+          </div>
+        </div>
+        </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://www.perfumery.com.au/assets/full/SKU002789.jpg?20171019134537" alt="" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">Agent Provocateur Fatale Perfume</h5>
+          <p class="card-text">Irresistible, yet mouth-watering aroma.</p>
+        </div> 
+          <div class="card-footer d-flex justify-content-between">
+            <p>Price:
+            <button type="button" class="btn btn-dark">₱9,789</button>
+            <div>
+              <button type="button" class="btn btn-outline-success">Add to cart</button>
+              <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#005eff}</style><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg></button>
+            </p>
+            </div>
+          </div>
+        </div>
+        </div>
+         
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/5a/d2/f1/5ad2f1df98e7a417ac60bdaf8a5bdbd8.jpg" alt="" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">Coach Fragrance Eau de Toilette</h5>
+          <p class="card-text">Energetic, sensual fragrance.</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <p>Price:
+            <button type="button" class="btn btn-dark">₱5,799</button>
+            <div>
+              <button type="button" class="btn btn-outline-success">Add to cart</button>
+              <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#005eff}</style><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg></button>
+            </p>
+            </div>
+          </div>
+        </div>
+        </div>  
+      </div>
     </div>
   </div>
-  
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+</html>
+
+    </div>
+  </body>
 </html>
